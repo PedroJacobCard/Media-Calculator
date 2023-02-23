@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="@import.css">
+    <titel class="titel">Media Calculator</titel>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+    <div>
+        <h1 class="h1">Your Media Calculator</h1>
+    </div>
+</head>
+<body>
+
+   <h3 class="labelC">Make sure you're using "." between fractional numbers!</h3>
+<form onsubmit="showValue(event)">
+    <label for="N1" class="labelC">Enter first N</label>
+        <input type="text" id="N1" class="inputC">
+    <label for="N2" class="labelC">Enter Second N</label>
+        <input type="text" id="N2" class="inputC">
+    <label for="N3" class="labelC">Enter Third N</label>
+        <input type="text" id="N3" class="inputC">
+    <label for="N4" class="labelC">Enter Fourth N</label>
+        <input type="text" id="N4" class="inputC">
+    <button type="submit" class="button">Calculate</button>
+</form>
+<div id="showValue" class="labelC"></div>
+<svg class="mySVG" id="mySVG">
+    <circle cx="90" cy="90" r="50" fill="#FFC107"/>
+    <circle cx="75" cy="75" r="7" fill="black"/>
+    <circle cx="105" cy="75" r="7" fill="black"/>
+    <path d="M 115 114 Q 90 114 67 114" stroke="black" fill="none"/>
+</svg> 
+
+   
+<script src="MediaCalculator.js.js"></script>
+</body>
+</html>
